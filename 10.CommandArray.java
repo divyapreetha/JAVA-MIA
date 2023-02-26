@@ -1,4 +1,5 @@
 //Java program to get an array of marks from the command line itself
+//Your classmate Dhanush had a doubt of passing Integer inputs in the command line instead of just passing String input. Hence I am uploading this code
 
 //Create a new class
 class CommandArray {
