@@ -1,5 +1,6 @@
 //Java program to get integer input from the command line itself
 //Get two int numbers as input and calculate their sum
+//Your classmate Dhanush had a doubt of passing Integer inputs in the command line instead of just passing String input. Hence I am uploading this code
 
 //Create a new class
 class CommandInt {
