@@ -12,26 +12,12 @@ class Lamp {
 
   }
 
-  // method to turnoff the light
-  void turnOff() {
-    isOn = false;
-    System.out.println("Light on? " + isOn);
-  }
-}
-
-class Main {
   public static void main(String[] args) {
-
-    // create objects led and halogen
+    
+    // create an object of Lamp
     Lamp led = new Lamp();
-    Lamp halogen = new Lamp();
 
-    // turn on the light by
-    // calling method turnOn()
+    // access method using object
     led.turnOn();
-
-    // turn off the light by
-    // calling method turnOff()
-    halogen.turnOff();
   }
 }
