@@ -1,0 +1,33 @@
+//Java program to demonstrate classes and objects using a Car
+import java.util.*;
+public class Car {
+    public int speed;
+    public int distance = 300;
+    public int duration;
+    
+    public void startTheCar() {
+        System.out.println("VIT CHENNAI");
+    }
+
+    public void calculateTravelTime(int s) {
+        speed = s;
+        duration = distance / speed;
+        System.out.println(duration + " hours"); 
+    }
+
+    public void stopTheCar() {
+        System.out.println("GOOGLE BANGALORE");
+    }
+    public static void main(String[] args) {
+        Scanner scan = new Scanner(System.in);
+        Car seltos = new Car();
+        System.out.println("Enter the speed at which you drive your car");
+        int speed = scan.nextInt();
+        seltos.startTheCar();
+        seltos.calculateTravelTime(speed);
+        seltos.stopTheCar();
+        scan.close();
+    }
+    
+}
+
