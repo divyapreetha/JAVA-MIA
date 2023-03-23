@@ -32,10 +32,8 @@ Mobile Number
 username
 Invalid Password
 Sign Up
-
-
-
 */
+
 
 import java.util.*;
 import java.util.regex.*;
