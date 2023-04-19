@@ -1,0 +1,125 @@
+CSE1018 Java
+
+CAT – 1 MCQ
+
+1.	Which statement is true about Java?
+
+a.	Java is a sequence-dependent programming language
+b.	Java is a code dependent programming language
+c.	Java is a platform-dependent programming language
+d.	Java is a platform-independent programming language
+
+Answer: d
+Explanation: Java is called ‘Platform Independent Language’ as it primarily works on the principle of ‘compile once, run everywhere’.
+
+
+2.	Which component is used to compile, debug and execute the java programs?
+
+a.	JRE
+b.	JIT
+c.	JDK
+d.	JVM
+
+Answer: c
+Explanation: JDK is a core component of Java Environment and provides all the tools, executables and binaries required to compile, debug and execute a Java Program.
+
+
+3.	What is not the use of “this” keyword in Java?
+
+a.	Referring to the instance variable when a local variable has the same name
+b.	Passing itself to the method of the same class
+c.	Passing itself to another method
+d.	Calling another constructor in constructor chaining
+
+Answer: b
+Explanation: “this” is an important keyword in java. It helps to distinguish between local variable and variables passed in the method as parameters.
+
+
+4.	Which data type value is returned by all transcendental math functions?
+
+a.	int
+b.	float
+c.	double
+d.	long
+
+Answer: c
+Explanation: Only double data type value is returned by all transcendental math functions. Transcendental math functions don’t return int or long. They return double instead of float as double has larger range.
+
+
+5.	What will be the output of the following Java code?
+
+class increment {
+        public static void main(String args[]) 
+        {        
+             int g = 3;
+             System.out.print(++g * 8);
+        } 
+    }
+
+
+a.	25
+b.	24
+c.	32
+d.	33
+
+Answer: c
+Explanation: Operator ++ has more preference than *, thus g becomes 4 and when multiplied by 8 gives 32.
+
+
+6.	Which of these is necessary condition for automatic type conversion in Java?
+
+a.	The destination type is smaller than source type
+b.	The destination type is larger than source type
+c.	The destination type can be larger or smaller than source type
+d.	None of the mentioned
+
+Answer: b
+
+
+7.	Which of these is returned by “greater than”, “less than” and “equal to” operators?
+
+a.	Integers
+b.	Floating – point numbers
+c.	Boolean
+d.	None of the mentioned
+
+Answer: c
+Explanation: All relational operators return a boolean value i.e., true and false.
+
+
+8.	Which of these have highest precedence?
+
+a.	()
+b.	++
+c.	*
+d.	>>
+
+Answer: a
+Explanation: Order of precedence is (highest to lowest) a -> b -> c -> d.
+
+
+9.	Which of these lines of Java code will give better performance?
+
+1.	a | 4 + c >> b & 7; 
+2. 	(a | ((( 4 * c ) >> b ) & 7 ))
+
+
+a.	1 will give better performance as it has no parentheses
+b.	2 will give better performance as it has parentheses
+c.	Both 1 & 2 will give equal performance
+d.	Dependent on the computer system
+
+Answer: c
+Explanation: Parentheses do not degrade the performance of the program. Adding parentheses to reduce ambiguity does not negatively affect your system.
+
+
+10.	Which of these statements is correct?
+
+a.	true and false are numeric values 1 and 0
+b.	true and false are numeric values 0 and 1
+c.	true is any non-zero value and false is 0
+d.	true and false are non-numeric values
+
+Answer: d
+Explanation: True and false are keywords, they are non-numeric values which do not relate to zero or non-zero numbers. true and false are boolean values.
+
