@@ -1,0 +1,165 @@
+CSE1018 Java
+
+CAT – 1 MCQ Retest
+
+
+1.	Which of the following leads to the portability and security of Java?
+
+a.	Bytecode is executed by JVM
+b.	The applet makes the Java code secure and portable
+c.	Use of exception handling
+d.	Dynamic binding between objects
+
+Answer: (a) Bytecode is executed by the JVM.
+Explanation: The output of the Java compiler is bytecode, which leads to the security and portability of the Java code. It is a highly developed set of instructions that are designed to be executed by the Java runtime system known as Java Virtual Machine (JVM). The Java programs executed by the JVM that makes the code portable and secure. Because JVM prevents the code from generating its side effects. The Java code is portable, as the same byte code can run on any platform.
+
+
+2.	Which of the following is not a Java feature?
+
+a.	Dynamic
+b.	Architecture Neutral
+c.	Use of pointers
+d.	Object-oriented
+
+Answer: (c) Use of pointers
+Explanation: The Java language does not support pointers; some of the major reasons are listed below:
+One of the major factors of not using pointers in Java is security concerns. Due to pointers, most of the users consider C-language very confusing and complex. This is the reason why Green Team (Java Team members) has not introduced pointers in Java.
+Java provides an effective layer of abstraction to the developers by not using pointers in Java.
+Java is dynamic, architecture-neutral, and object-oriented programming language.
+
+
+3.	Evaluate the following Java expression, if x=3, y=5, and z=10:   
+                    ++z + y - y + z + x++
+
+a.	24
+b.	23
+c.	20
+d.	25
+
+Answer: (d) 25
+Explanation: In the above expression, ++z means that the value will first increment by 1, i.e. 12. Now, evaluate the statement by putting the values of x, y, and z. On evaluating the expression, we get 25, as shown below.
+
+++z +y -y +z + x++
+11 + 5 - 5 + 11 + 3 = 25
+
+
+4.	What will be the output of the following program?
+
+public class Test {  
+public static void main(String[] args) {  
+    int count = 1;  
+    while (count <= 15) {  
+    System.out.println(count % 2 == 1 ? "***" : "+++++");  
+    ++count;  
+        }      // end while  
+    }       // end main   
+ }  
+
+a.	15 times ***
+b.	9 times *** and 8 times +++++
+c.	8 times *** and 7 times +++++
+d.	7 times *** and 6 times +++++
+
+Answer: (c) 8 times *** and 7 times +++++
+Explanation: In the above code, we have declared count = 1. The value of count will be increased till 14 because of the while (count<=15) statement. If the remainder is equal to 1 on dividing the count by 2, it will print (***) else print (+++++). Therefore, for all odd numbers till 15 (1, 3, 5, 7, 9, 11, 13, 15), it will print (***), and for all even numbers till 14 (2, 4, 6, 8, 10, 12, 14) it will print (+++++).
+Hence, an asterisk (***) will be printed eight times, and plus (+++++) will be printed seven times.
+
+
+5.	How many times will “MIA” be printed?
+
+int count = 0;
+do {
+	System.out.println(“MIA”);
+	count++;
+} while(count < 10);
+
+a.	8
+b.	9
+c.	10
+d.	11
+
+Answer: (c). 10
+Explanation: MIA will be printed 10 times, starting from count = 0.
+
+
+6.	Which of the following is the correct expression that evaluates to true if the number x is between 1 and 100 or the number is negative?
+
+a.	1 < x < 100 || x < 0
+b.	((x < 100) && (x > 1)) || (x < 0)
+c.	((x < 100) && (x > 1)) && (x < 0)
+d.	(1 > x > 100) || (x < 0)
+
+Answer: (b)	((x < 100) && (x > 1)) || (x < 0)
+
+
+7.	What is the output of the following code?
+
+public class Test {
+	public static void main (String args[]) {
+		System.out.print(“”==””);
+		System.out.print(“ ”);
+		System.out.print(“A”==”A”);
+		System.out.print(“ ”);
+		System.out.print(“a==A”);
+}
+}
+
+a.	“==” A”==”A a==A
+b.	true true false
+c.	true true a==A
+d.	Compilation Fails
+
+Answer: (c) true true a==A
+
+
+8.	Determine the output of the following code:
+
+public class Test {
+	public static void main(String args[]) {
+	int a = 5, b = 6, c = 7;
+	System.out.println(“Value is ” + b + c);
+	System.out.println(a + b + c);
+	System.out.println(“String ” + (b + c) );
+}
+}
+
+a.	Value is 67 13 String 13
+b.	Value is 13 18 String 13
+c.	Value is 13 18 String
+d.	Compilation Fails
+
+Answer: (a) Value is 67 18 String 13
+
+
+9.	Which of the following for loops will be an infinite loop?
+
+a.	for( ; ; )
+b.	for(i = 0; i < 1; i--)
+c.	for(i = 0; ; i++)
+d.	All of the mentioned options
+
+Answer: (d) All of the mentioned options
+
+
+10.	What will be the output of the following Java code?
+
+class Box {
+	int width;
+	int height;
+	int length;
+}
+class Main {
+	public static void main(String[] args) {
+	Box obj = new Box();
+	obj.width = 10;
+	obj.height = 2;
+	obj.length = 10;
+	int y = obj.width * obj.height * obj.length;
+	System.out.print(y);
+}
+}
+a.	100
+b.	400
+c.	200
+d.	12
+Answer: (c). 200
