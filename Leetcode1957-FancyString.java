@@ -34,6 +34,30 @@ Explanation: No three consecutive characters are equal, so return "aab".
 
 */
 
+//JAIDEEP's code
+import java.util.*;
+import java.io.*;
+
+class Main {
+    public static void main(String[] args) {
+        Scanner get = new Scanner(System.in);
+        String input = get.nextLine();
+        StringBuffer mod = new StringBuffer(input);
+        int count = 1;
+        for (int i = 1; i < mod.length(); i++) {
+            if (mod.charAt(i) == mod.charAt(i - 1)) {
+                count++;
+                if (count > 2)
+                    mod.deleteCharAt(i--);
+            } else
+                count = 1;
+        }
+        System.out.println(mod);
+    }
+}
+
+
+//Solution II
 class Solution {
     public String makeFancyString(String s) {
         StringBuilder ans = new StringBuilder();
